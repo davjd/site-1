@@ -8,7 +8,7 @@ body{
 }
 @font-face {
     font-family: iglesia;
-    src: url("fonts/moderna.TTF");
+    src: url("fonts/moderna.ttf");
 }
 .divBox{
   height:100vh;
