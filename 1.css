@@ -40,7 +40,7 @@ body{
   font-size: 5vw;
   border-bottom: .2vh solid white;
   font-family: iglesia;
-  transition: color 3s, background-color 4s, border 3s;
+  transition: color 2s ease-in, background-color 2s ease-out, border 3s ease-in;
 }
 .itm2{
   left: 10vw;
@@ -49,7 +49,7 @@ body{
   position: relative;
   margin: 0px auto;
   text-align: center;
-  top: 35vh;
+  top: 30vh;
   transform: translateY(-20%);
   color: white;
   left: -5vw;
@@ -71,17 +71,28 @@ body{
   font-family: nasa;
   margin: 0px auto;
   font-size: 5vw;
-  top: 50px;
+  top: 35px;
   color: black;
 }
 #div2{
-  background: url("11.jpg") no-repeat center center fixed;
+  background: url("010.jpg") no-repeat center center fixed;
   -webkit-background-size: 100vw 100vh;
   -moz-background-size: 100vw 100vh;
   -o-background-size: 100vw 100vh;
   background-size: 100vw 100vh;
 }
-@media screen and (max-width: 770px) {
+#p-2-1{
+  position: relative;
+  margin: 0px auto;
+  color: black;
+  font-size: 7vh;
+  font-family: iglesia;
+  display: inline-block;
+  float: left;
+  opacity: .7;
+
+}
+@media screen and (max-width: 600px) {
     #div1 p {
         font-size: 9vw;
     }
@@ -95,4 +106,34 @@ body{
       width: 35vw;
       font-size: 7vw;
     }
+}
+@media screen and (max-height: 329px) {
+  #div1 p{
+    top: 15px;
+  }
+  #container-1{
+    top: 10vh;
+  }
+  #container-2{
+    top: 35vh;
+  }
+  .itm1,.itm2{
+    width: 35vw;
+    font-size: 4vw;
+  }
+}
+@media screen and (max-height: 500px) and (min-height: 330px){
+  #div1 p{
+    top: 10px;
+  }
+  #container-1{
+    top: 10vh;
+  }
+  #container-2{
+    top: 25vh;
+  }
+  .itm1,.itm2{
+    width: 35vw;
+    font-size: 5vw;
+  }
 }
