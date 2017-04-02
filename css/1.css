@@ -1,139 +1,231 @@
-body{
-  margin: 0px;
-  overflow-x: hidden;
+body {
+    margin: 0px;
+    overflow-x: hidden;
 }
+
 @font-face {
     font-family: nasa;
     src: url("../fonts/nasa.ttf");
 }
+
 @font-face {
     font-family: iglesia;
     src: url("../fonts/fonts/moderna.ttf");
 }
-.divBox{
-  height:100vh;
-  width: 100vw;
-  position: relative;
-  text-align: center;
-  margin: 0px auto;
-}
-.itm1:hover, .itm2:hover{
-  cursor: pointer;
-  border: 0px solid white;
-  background-color: rgba(255,255,255,.5);
-  color: black;
+
+.divBox {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
 }
 
-#container-1{
-  position: relative;
-  margin: 0px auto;
-  text-align: center;
-  top: 20vh;
-  transform: translateY(-20%);
-  color: white;
-  left: -5vw;
-}
-.itm1,.itm2{
-  position: relative;
-  display:inline-block;
-  width: 25vw;
-  font-size: 5vw;
-  border-bottom: .2vh solid white;
-  font-family: iglesia;
-  transition: color 2s ease-in, background-color 2s ease-out, border 3s ease-in;
-}
-.itm2{
-  left: 10vw;
-}
-#container-2{
-  position: relative;
-  margin: 0px auto;
-  text-align: center;
-  top: 30vh;
-  transform: translateY(-20%);
-  color: white;
-  left: -5vw;
+.itm1:hover,
+.itm2:hover {
+    cursor: pointer;
+    border: 0px solid white;
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
 }
 
-#div1{
-
-
-  background: url("../imgs/back.png") no-repeat center center fixed;
-  -webkit-background-size: 100vw 100vh;
-  -moz-background-size: 100vw 100vh;
-  -o-background-size: 100vw 100vh;
-  background-size: 100vw 100vh;
-  vertical-align: middle;
-
+#container-1 {
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    top: 20vh;
+    transform: translateY(-20%);
+    color: white;
+    left: -5vw;
 }
-#div1 p{
-  position: relative;
-  font-family: nasa;
-  margin: 0px auto;
-  font-size: 5vw;
-  top: 35px;
-  color: black;
-}
-#div2{
-  background: url("../imgs/yikes.png") no-repeat center center fixed;
-  -webkit-background-size: 100vw 100vh;
-  -moz-background-size: 100vw 100vh;
-  -o-background-size: 100vw 100vh;
-  background-size: 100vw 100vh;
-}
-#p-2-1{
-  position: relative;
-  margin: 0px auto;
-  color: black;
-  font-size: 7vh;
-  font-family: iglesia;
-  display: inline-block;
-  float: left;
-  opacity: .7;
 
+.itm1,
+.itm2 {
+    position: relative;
+    display: inline-block;
+    width: 25vw;
+    font-size: 5vw;
+    border-bottom: .2vh solid white;
+    font-family: iglesia;
+    transition: color 2s ease-in, background-color 2s ease-out, border 3s ease-in;
 }
+
+.itm2 {
+    left: 10vw;
+}
+
+#container-2 {
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    top: 30vh;
+    transform: translateY(-20%);
+    color: white;
+    left: -5vw;
+}
+
+.full-back {
+    -webkit-background-size: 100vw 100vh;
+    -moz-background-size: 100vw 100vh;
+    -o-background-size: 100vw 100vh;
+    background-size: 100vw 100vh;
+}
+
+#div1 {
+    background: url("../imgs/back.png") no-repeat center center fixed;
+    vertical-align: middle;
+    -webkit-background-size: 100vw 100vh;
+    -moz-background-size: 100vw 100vh;
+    -o-background-size: 100vw 100vh;
+    background-size: 100vw 100vh;
+}
+
+#div2 {
+    /*background: url("../imgs/1.png") no-repeat center center fixed;*/
+    vertical-align: middle;
+    -webkit-background-size: 100vw 100vh;
+    -moz-background-size: 100vw 100vh;
+    -o-background-size: 100vw 100vh;
+    background-size: 100vw 100vh;
+}
+
+#div1 p {
+    position: relative;
+    font-family: nasa;
+    margin: 0px auto;
+    font-size: 5vw;
+    top: 35px;
+    color: black;
+}
+
+#p-2-1 {
+    z-index: 10;
+    position: relative;
+    margin: 0px auto;
+    color: black;
+    font-family: nasa;
+    display: block;
+    float: left;
+    opacity: .7;
+    height: 9vh;
+    font-size: 3em;
+}
+
+.text-body {
+    display: block;
+    position: relative;
+    top: 10vh;
+    width: 84vw;
+    left: 8vw;
+    text-align: justify;
+    height: 80vh;
+}
+
+.text-body p {
+    display: block;
+    position: relative;
+    font-family: nasa;
+    color: grey;
+    margin: 10px;
+    margin-top: -9vh;
+    float: left;
+    font-size: 1.4em;
+}
+
 @media screen and (max-width: 600px) {
     #div1 p {
-        font-size: 9vw;
+        font-size: 7vw;
     }
-    #container-1{
-      top: 35vh;
+    #container-1 {
+        top: 35vh;
     }
-    #container-2{
-      top: 50vh;
+    #container-2 {
+        top: 50vh;
     }
-    .itm1,.itm2{
-      width: 35vw;
-      font-size: 7vw;
+    .itm1,
+    .itm2 {
+        width: 35vw;
+        font-size: 7vw;
+    }
+    #p-2-1 {
+        z-index: 10;
+        position: relative;
+        margin: 0px auto;
+        color: black;
+        font-family: nasa;
+        display: block;
+        float: left;
+        opacity: .85;
+        height: 9vh;
+        font-size: 1em;
+    }
+    .text-body {
+        display: block;
+        position: relative;
+        top: 3vh;
+        width: 90vw;
+        left: 5vw;
+        text-align: justify;
+        height: 90vh;
+    }
+    .text-body p {
+        display: block;
+        position: relative;
+        font-family: nasa;
+        color: grey;
+        margin: 10px;
+        margin-top: -9vh;
+        float: left;
+        font-size: .83em;
     }
 }
+
 @media screen and (max-height: 329px) {
-  #div1 p{
-    top: 15px;
-  }
-  #container-1{
-    top: 10vh;
-  }
-  #container-2{
-    top: 35vh;
-  }
-  .itm1,.itm2{
-    width: 35vw;
-    font-size: 4vw;
-  }
+    #div1 p {
+        top: 15px;
+    }
+    #container-1 {
+        top: 10vh;
+    }
+    #container-2 {
+        top: 35vh;
+    }
+    .itm1,
+    .itm2 {
+        width: 35vw;
+        font-size: 4vw;
+    }
 }
-@media screen and (max-height: 500px) and (min-height: 330px){
-  #div1 p{
-    top: 10px;
-  }
-  #container-1{
-    top: 10vh;
-  }
-  #container-2{
-    top: 25vh;
-  }
-  .itm1,.itm2{
-    width: 35vw;
-    font-size: 5vw;
-  }
+
+@media screen and (max-height: 500px) and (min-height: 330px) {
+    #div1 p {
+        top: 10px;
+    }
+    #container-1 {
+        top: 10vh;
+    }
+    #container-2 {
+        top: 25vh;
+    }
+    .itm1,
+    .itm2 {
+        width: 35vw;
+        font-size: 5vw;
+    }
+    #p-2-1 {
+        z-index: 10;
+        position: relative;
+        margin: 0px auto;
+        color: black;
+        font-family: nasa;
+        display: block;
+        float: left;
+        opacity: .5;
+        height: 9vh;
+        font-size: 1em;
+    }
+}
+
+.full-back:nth-child(1) {
+    background-color: red;
 }
